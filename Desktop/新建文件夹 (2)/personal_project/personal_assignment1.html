@@ -7812,9 +7812,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>环境就绪 - Python + Pandas + Matplotlib + Seaborn + Scikit-learn
-课程：第三章 高维表格数据，第四章 时间序列分析
-数据来源：BGG BoardGameGeek，来自 TidyTuesday 2019
+<pre>环境就绪
 </pre>
 </div>
 </div>
@@ -7971,7 +7969,6 @@ a.anchor-link {
 <th>列名</th>
 <th>类型</th>
 <th>说明</th>
-<th>课程对应</th>
 </tr>
 </thead>
 <tbody>
@@ -7979,61 +7976,51 @@ a.anchor-link {
 <td>game_id, name</td>
 <td>ID/文本</td>
 <td>游戏标识符与名称</td>
-<td>—</td>
 </tr>
 <tr>
 <td>year_published</td>
 <td>年份</td>
 <td>出版年份</td>
-<td>第三章：序列数据</td>
 </tr>
 <tr>
 <td>average_rating</td>
 <td>浮点数 (1-10)</td>
-<td>平均用户评分</td>
-<td>连续数值型（目标变量）</td>
+<td>平均用户评分（目标变量）</td>
 </tr>
 <tr>
 <td>users_rated</td>
 <td>整数</td>
 <td>评分人数</td>
-<td>流行度指标</td>
 </tr>
 <tr>
 <td>mechanic</td>
 <td>文本（逗号分隔）</td>
 <td>游戏机制标签</td>
-<td>高维分类特征</td>
 </tr>
 <tr>
 <td>category</td>
 <td>文本（逗号分隔）</td>
 <td>游戏类别</td>
-<td>高维分类特征</td>
 </tr>
 <tr>
 <td>playing_time</td>
 <td>整数（分钟）</td>
 <td>平均游戏时长</td>
-<td>时长代理变量</td>
 </tr>
 <tr>
 <td>min_players, max_players</td>
 <td>整数</td>
 <td>玩家人数范围</td>
-<td>玩家配置</td>
 </tr>
 <tr>
 <td>min_age</td>
 <td>整数</td>
 <td>最低推荐年龄</td>
-<td>复杂度代理变量</td>
 </tr>
 <tr>
 <td>designer, publisher, artist</td>
 <td>文本</td>
 <td>创作者元数据</td>
-<td>分类变量</td>
 </tr>
 </tbody>
 </table>
@@ -8047,11 +8034,11 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 数据清洗（第四章 pp.9-13）===
+<pre>数据清洗
 1. 过滤 users_rated &gt;= 30：10,532 -&gt; 10,532 款游戏
 2. 过滤有效出版年份：10,532 -&gt; 10,532 款游戏
 
-=== 缺失值分析 ===
+缺失值分析
 </pre>
 </div>
 </div>
@@ -8326,7 +8313,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 派生特征 ===
+<pre>派生特征
   log_users_rated：流行度（对数尺度）
   time_bin：时长类别
   age_bin：推荐年龄类别
@@ -8346,8 +8333,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h2 id="%E6%AD%A5%E9%AA%A43%EF%BC%9A%E6%8E%A2%E7%B4%A2%E6%80%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88EDA%EF%BC%89">步骤3：探索性数据分析（EDA）<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A43%EF%BC%9A%E6%8E%A2%E7%B4%A2%E6%80%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88EDA%EF%BC%89">¶</a></h2><p>遵循第三章“知识/洞察提取”范式（pp.4-5）</p>
+<h2 id="%E6%AD%A5%E9%AA%A43%EF%BC%9A%E6%8E%A2%E7%B4%A2%E6%80%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88EDA%EF%BC%89">步骤3：探索性数据分析（EDA）<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A43%EF%BC%9A%E6%8E%A2%E7%B4%A2%E6%80%A7%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%88EDA%EF%BC%89">¶</a></h2><p>基于第3章数据分析框架</p>
 </div>
 </div>
 </div>
@@ -8358,7 +8344,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 评分分布 ===
+<pre>评分分布
 均值：6.37，中位数：6.39
 偏度：-0.301，峰度：0.495
 </pre>
@@ -8461,7 +8447,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== Top-15 最高评分桌游（评分人数 &gt;= 5000）===
+<pre>Top-15 最高评分桌游（评分人数 &gt;= 5000）
 </pre>
 </div>
 </div>
@@ -8652,8 +8638,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h2 id="%E6%AD%A5%E9%AA%A44%EF%BC%9A%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E4%B8%8E%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90">步骤4：特征工程与相关性分析<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A44%EF%BC%9A%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E4%B8%8E%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90">¶</a></h2><p>对应第三章“高维表格与特征维度”（p.31）</p>
+<h2 id="%E6%AD%A5%E9%AA%A44%EF%BC%9A%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E4%B8%8E%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90">步骤4：特征工程与相关性分析<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A44%EF%BC%9A%E7%89%B9%E5%BE%81%E5%B7%A5%E7%A8%8B%E4%B8%8E%E7%9B%B8%E5%85%B3%E6%80%A7%E5%88%86%E6%9E%90">¶</a></h2><p>对应第3章高维表格与特征维度分析</p>
 </div>
 </div>
 </div>
@@ -8692,7 +8677,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 研究问题1：游戏复杂度（游戏时长）与评分是否相关？===
+<pre>研究问题1：游戏复杂度（游戏时长）与评分是否相关？
 </pre>
 </div>
 </div>
@@ -8720,7 +8705,7 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 研究问题2：与高评分相关的游戏机制 ===
+<pre>研究问题2：与高评分相关的游戏机制
 </pre>
 </div>
 </div>
@@ -8750,9 +8735,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h2 id="%E6%AD%A5%E9%AA%A45%EF%BC%9A%E6%A0%B8%E5%BF%83%E5%8F%91%E7%8E%B0">步骤5：核心发现<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A45%EF%BC%9A%E6%A0%B8%E5%BF%83%E5%8F%91%E7%8E%B0">¶</a></h2><p>对应教学大纲“研究能力”目标2：
-“对结果进行统计处理，得出具有商业价值的工程结论”</p>
+<h2 id="%E6%AD%A5%E9%AA%A45%EF%BC%9A%E6%A0%B8%E5%BF%83%E5%8F%91%E7%8E%B0">步骤5：核心发现<a class="anchor-link" href="#%E6%AD%A5%E9%AA%A45%EF%BC%9A%E6%A0%B8%E5%BF%83%E5%8F%91%E7%8E%B0">¶</a></h2><p>对分析结果进行统计解读，提炼有价值的结论</p>
 </div>
 </div>
 </div>
@@ -8763,10 +8746,8 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>======================================================================
-  核心发现 - 桌游复杂度与玩家评分量化分析
+<pre>  核心发现 - 桌游复杂度与玩家评分量化分析
   大数据处理技术 - 个人作业1
-======================================================================
 
 [发现1] 复杂度与评分关系：
   游戏时长 vs 评分：r = 0.058
@@ -8797,10 +8778,7 @@ a.anchor-link {
   2015年以后：573 款游戏，平均评分=7.11，平均机制数=3.1
 
 ======================================================================
-[作业2 方向]
-  * PCA：100+ 机制 one-hot 编码 -&gt; 2D/3D 机制空间（第三章 PCA）
-  * K-Means：将桌游聚类为不同类型（第三章 聚类）
-  * 时间序列：检测评分趋势中的结构性断点（第四章）
+后续可在作业2中探索：PCA降维、K-Means聚类、时间序列断点检测
 ======================================================================
 </pre>
 </div>
@@ -8814,19 +8792,12 @@ a.anchor-link {
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child">
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>=== 数据处理流程总结 ===
+<pre>数据处理流程总结
 原始数据：2 万+款游戏，22 个字段
 清洗后：10,182 款游戏
 缺失值：0（全部已处理）
 派生特征：7 个（log_users_rated, time_bin, age_bin, mechanics_count, player_range, era）
 可视化图表：8 张，已保存至 output/ 目录
-
-课程知识点覆盖：
-  [OK] 第三章：表格数据、特征工程、高维分类特征
-  [OK] 第四章：数据清洗、缺失值处理、时间序列趋势
-  [OK] 教学大纲：多维数据建模、复合指标分解
-
-已为作业2做好准备：PCA + 聚类 + 时间序列分析
 </pre>
 </div>
 </div>

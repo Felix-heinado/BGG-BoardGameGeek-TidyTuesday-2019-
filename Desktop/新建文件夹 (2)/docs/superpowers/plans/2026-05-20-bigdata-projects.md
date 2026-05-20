@@ -1,7 +1,5 @@
 # Big Data Course Projects Implementation Plan
 
-> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
-
 **Goal:** Implement 团队作业1 (US crime rate analysis) and 个人项目作业1+2 (BoardGameGeek board game analysis) as Jupyter notebooks with full data pipelines and visualizations.
 
 **Architecture:** Each project is an independent Jupyter notebook pipeline: data loading → cleaning → EDA → feature engineering → conclusions. Personal assignment 2 extends assignment 1 with PCA, clustering, and time series modules.
