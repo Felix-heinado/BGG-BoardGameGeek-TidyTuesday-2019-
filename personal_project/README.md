@@ -53,7 +53,7 @@
 
 ## 技术栈
 
-Python · pandas · NumPy· Jupyter Notebook
+Python · pandas · NumPy · Matplotlib · Seaborn · scikit-learn · SciPy · Jupyter Notebook
 
 ## 课程信息
 
